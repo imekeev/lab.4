@@ -1,5 +1,3 @@
-# дааа вот это даа уже новая лабка хех хотя зачем я это пишу все равно никто не читает xDDD
-# So now i start today labs work and the first topic is Iterators.
 
 class person:
     def __init__(self , f_name,l_name):
