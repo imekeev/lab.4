@@ -4,19 +4,16 @@ file_path = os.path.join(os.path.dirname(__file__), "sample-data.json")
 with open(file_path) as file:
     data = json.load(file)
 
-# Заголовок таблицы
 header = "Interface Status"
 separator = "=" * 80
 columns = f"{'DN':<50} {'Description':<20} {'Speed':<7} {'MTU':<6}"
 divider = "-" * 80
 
-# Вывод заголовков
 print(header)
 print(separator)
 print(columns)
 print(divider)
 
-# Вывод данных
 for item in data["imdata"]:
     attributes = item["l1PhysIf"]["attributes"]
     dn = attributes["dn"]
