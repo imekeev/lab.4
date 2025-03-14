@@ -1,6 +1,3 @@
-#Генераторы (Generators) — это удобный способ создавать итераторы с помощью yield. 
-#Они позволяют экономить память, так как не создают сразу весь список, а выдают
-#элементы по мере запроса.
 
 def my_gen():
     yield 2593
@@ -15,13 +12,13 @@ print(next(gen))  # 3
 
 
 
-# Lab work
+
 
 def square_generator(N):
     for i in range(N + 1):
         yield i ** 2
 
-# Тест
+
 N = int(input("Введите число N: "))
 for square in square_generator(N):
     print(square)
@@ -53,7 +50,7 @@ def squares(a, b):
     for i in range(a, b + 1):
         yield i ** 2
 
-a, b = map(int, input("Введите a и b: ").split())
+a, b = map(int, input("Введите a и b: ").split()) #map-быстро преобразовать строку в числа 
 for square in squares(a, b):
     print(square)
 #====================================================================================
